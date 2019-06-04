@@ -1,23 +1,36 @@
 \documentclass{article}
 
-\usepackage{fancyhdr}
-\usepackage{extramarks}
-\usepackage{amsmath}
-\usepackage{amsthm}
-\usepackage{amsfonts}
-\usepackage{tikz}
-\usepackage[plain]{algorithm}
-\usepackage{algpseudocode}
-\usepackage{dsfont}
-\usepackage{subcaption}
-\usepackage{lipsum}
-\usepackage{ragged2e}
-\usepackage{caption}
-\usepackage{subcaption}
-\usepackage{graphicx, url}
-\usetikzlibrary{automata,positioning}
+%
+% Homework Details
+%   - Title
+%   - Due date
+%   - Class
+%   - Section/Time
+%   - Instructor
+%   - Author
+%   - Abstract
 
+\newcommand{\userId}{aksh}
+\newcommand{\hmwkTitle}{Homework 5}
+\newcommand{\hmwkDueDate}{June, 4th}
+\newcommand{\hmwkDueTime}{23:59}
+\newcommand{\hmwkClassShort}{AMATH 586 }
+\newcommand{\hmwkClass}{\hmwkClassShort \\ Numerical Analysis of Time-Dependent Systems}
+\newcommand{\hmwkClassTime}{Section A}
+\newcommand{\hmwkClassInstructor}{Prof. Randall J. LeVeque}
+\newcommand{\hmwkAuthorName}{\textbf{Alexey Sholokhov}}
+\newcommand{\hmwkAuthorEmail}{\textit{aksh@uw.edu}}
+\newcommand{\hmwkAbstract}{\textbf{Abstract:}}
 
+\newif\ifLISTINGS
+\newif\ifALGORITHMS
+\newif\ifTiKZ
+% Toggles, set to false if not needed since it will speed up the compilation
+\LISTINGSfalse   % LISTINGS toggle
+\ALGORITHMSfalse % ALGORITHMS toggle
+\TiKZfalse       % TiKZ toggle
+
+\input{useful_packages.tex}
 % Math macros file
 \input{math_macros}
 
@@ -92,27 +105,6 @@
 }
 
 %
-% Homework Details
-%   - Title
-%   - Due date
-%   - Class
-%   - Section/Time
-%   - Instructor
-%   - Author
-%   - Abstract
-
-\newcommand{\hmwkTitle}{Homework 5}
-\newcommand{\hmwkDueDate}{June, 4th}
-\newcommand{\hmwkDueTime}{23:59}
-\newcommand{\hmwkClassShort}{AMATH 586 }
-\newcommand{\hmwkClass}{\hmwkClassShort \\ Numerical Analysis of Time-Dependent Systems}
-\newcommand{\hmwkClassTime}{Section A}
-\newcommand{\hmwkClassInstructor}{Prof. Randall J. LeVeque}
-\newcommand{\hmwkAuthorName}{\textbf{Alexey Sholokhov}}
-\newcommand{\hmwkAuthorEmail}{\textit{aksh@uw.edu}}
-\newcommand{\hmwkAbstract}{\textbf{Abstract:}}
-
-%
 % Title Page
 %
 
@@ -125,7 +117,6 @@
 %    \justify{\textbf{Abstract: }\hmwkAbstract}
     \vspace{1in}
 }
-
 
 \author{\hmwkAuthorName\\ \hmwkAuthorEmail}
 \date{\today}
