@@ -1,0 +1,102 @@
+% derivatives
+\newcommand{\dderiv}[2]{\frac{\mathrm{d}}{\mathrm{d}#2} (#1)}
+
+% partial derivatives
+\newcommand{\pderiv}[2]{\frac{\partial}{\partial #1} (#2)}
+\newcommand*{\pd}[3][]{\ensuremath{\frac{\partial^{#1} #2}{\partial #3}}}
+
+% Integral dx
+\newcommand{\dx}{\mathrm{d}x}
+
+% Evaluation operator
+\newcommand*{\at}[2]{\Big|_{#1}^{#2}}
+
+% Probability macros
+% Variance
+\newcommand{\Var}{\mathrm{Var}}
+% Covariance
+\newcommand{\Cov}{\mathrm{Cov}}
+% Bias
+\newcommand{\Bias}{\mathrm{Bias}}
+% Probability
+\newcommand*{\prob}[1]{\ensuremath{\mathbb{P}\left[#1\right]}}
+% Indicator function of an event
+\newcommand*{\ind}[1]{\ensuremath{\mathds{1}_{\left[#1\right]}}}
+
+% Different math operators for optimization
+\DeclareMathOperator{\dom}{Dom}
+\DeclareMathOperator{\diag}{Diag}
+\DeclareMathOperator{\prox}{prox}
+\DeclareMathOperator*{\proj}{proj}
+\DeclareMathOperator*{\sign}{sign}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+
+%% \mathbb symbols
+\DeclareMathOperator{\E}{\mathbb{E}}
+\DeclareMathOperator{\A}{\mathbb{A}}
+\DeclareMathOperator{\R}{\mathbb{R}}
+\DeclareMathOperator{\C}{\mathbb{C}}
+\DeclareMathOperator{\X}{\mathbb{X}}
+\DeclareMathOperator{\N}{\mathbb{N}}
+\DeclareMathOperator{\Q}{\mathbb{Q}}
+
+%% \mathcal symbols
+\DeclareMathOperator{\RR}{\mathcal{R}}
+\DeclareMathOperator{\PP}{\mathcal{P}}
+\DeclareMathOperator{\NN}{\mathcal{N}}
+\DeclareMathOperator{\CC}{\mathcal{C}}
+\DeclareMathOperator{\FF}{\mathcal{F}}
+\DeclareMathOperator{\YY}{\mathcal{Y}}
+
+% limit arrow "goes to"
+\newcommand{\goto}{\rightarrow}
+
+% Big O
+\newcommand{\bigo}{{\mathcal O}}
+
+% 1/2
+\newcommand{\half}{\frac{1}{2}}
+% 1/2
+\newcommand{\halfof}[1]{\frac{#1}{2}}
+
+% Real numbers
+\newcommand\reals{{{\rm l} \kern -.15em {\rm R} }}
+
+% Complex numbers
+\newcommand\complex{{\raisebox{.043ex}{\rule{0.07em}{1.56ex}} \hskip -.35em {\rm C}}}
+
+
+% matrix environment for vectors or matrices where elements are centered
+\newenvironment{mat}{\left[\begin{array}{ccccccccccccccc}}{\end{array}\right]}
+\newcommand\bcm{\begin{mat}}
+\newcommand\ecm{\end{mat}}
+
+% matrix environment for vectors or matrices where elements are right justified
+\newenvironment{rmat}{\left[\begin{array}{rrrrrrrrrrrrr}}{\end{array}\right]}
+\newcommand\brm{\begin{rmat}}
+\newcommand\erm{\end{rmat}}
+
+% for left brace and a set of choices
+\newenvironment{choices}{\left\{ \begin{array}{ll}}{\end{array}\right.}
+\newcommand\when{&\text{if~}}
+\newcommand\otherwise{&\text{otherwise}}
+% sample usage:
+%  \delta_{ij} = \begin{choices} 1 \when i=j, \\ 0 \otherwise \end{choices}
+
+% For equations: first argument is a label, second is the equation 
+\newcommand{\eq}[2]{\begin{equation}\label{eq:#1}\begin{split}#2\end{split}\end{equation}}
+
+% some useful macros for finite difference methods:
+\newcommand\unp{U^{n+1}}
+\newcommand\unm{U^{n-1}}
+\newcommand\un{U^{n}}
+
+
+% Theorems and co. environments setup
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+
