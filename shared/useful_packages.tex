@@ -247,8 +247,10 @@
 \newtcolorbox{tipt}[1]{colback=blue!5!white,colframe=blue!75!black,fonttitle=\bfseries,title=#1}
 
 % Thick strike out
-\newcommand{\soutthick}[1]{%
+\newcommand{\cancelled}[1]{%
     \renewcommand{\ULthickness}{3pt}%
        \sout{#1}%
     \renewcommand{\ULthickness}{.4pt}% Resetting to ulem default
 }
+
+\newcommand{\done}[1]{\sout{#1}}
