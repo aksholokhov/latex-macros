@@ -37,7 +37,7 @@
 
 % =============== Figures ===============
 \usepackage{float} % Float features
-\usepackage{graphicx} % Image insertion.
+\usepackage[final]{graphicx} % Image insertion.
 \usepackage{caption,subcaption} % For custom caption environments
 \usepackage{wrapfig} % Al­lows fig­ures or ta­bles to have text wrapped around them
 \ifTiKZ
@@ -235,6 +235,13 @@
 \usepackage[colorinlistoftodos]{todonotes} % useful for leaving todonotes
 \newcommand{\hightodo}[1]{\todo[inline,backgroundcolor=red!90!yellow!80!white]{\textbf{\userId}: #1}}
 \newcommand{\lowtodo}[1]{\todo[inline,backgroundcolor=blue!30!white]{\textbf{\userId}: #1}}
+\newcommand{\ask}[2]{\todo[inline,backgroundcolor=Orchid!40!white]{
+	\textbf{Ask #1} #2}}
+\newcommand{\critical}[1]{\todo[inline, backgroundcolor=BrickRed!50!white]{\textbf{Critical:} #1}}
+\newcommand{\search}[1]{\todo[inline, backgroundcolor=blue!30!white]{\textbf{Search:} #1}}
+\newcommand{\edit}[1]{\todo[inline, backgroundcolor=CornflowerBlue!30!white]{\textbf{Edit:} #1}}
+\newcommand{\verify}[1]{\todo[inline, backgroundcolor=Apricot!50!white]{\textbf{Verify:} #1}}
+\newcommand{\delegate}[2]{\todo[inline, background=Lavender]{\textbf{For #1:} #2}}
 
 \newtcolorbox{tip}{colback=blue!5!white,colframe=blue!75!black}
 \newtcolorbox{tipt}[1]{colback=blue!5!white,colframe=blue!75!black,fonttitle=\bfseries,title=#1}
