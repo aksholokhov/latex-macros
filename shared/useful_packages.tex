@@ -23,6 +23,7 @@
 \usepackage[usenames,dvipsnames]{xcolor} % Required for custom colors
 \usepackage{lastpage} %  par­tic­u­larly use­ful in the page footer that says: Page N of M.
 \usepackage{extramarks} % 
+\usepackage{fontawesome} % For web icons
 
 % =============== Math ===============
 \usepackage{amsmath} % Standard math packages
@@ -241,10 +242,19 @@
 \newcommand{\search}[1]{\todo[inline, backgroundcolor=blue!30!white]{\textbf{Search:} #1}}
 \newcommand{\edit}[1]{\todo[inline, backgroundcolor=CornflowerBlue!30!white]{\textbf{Edit:} #1}}
 \newcommand{\verify}[1]{\todo[inline, backgroundcolor=Apricot!50!white]{\textbf{Verify:} #1}}
+\newcommand{\experiment}[1]{\todo[inline, backgroundcolor=Green!50!white]{\textbf{Verify:} #1}}
 \newcommand{\delegate}[2]{\todo[inline, background=Lavender]{\textbf{For #1:} #2}}
 
-\newtcolorbox{tip}{colback=blue!5!white,colframe=blue!75!black}
-\newtcolorbox{tipt}[1]{colback=blue!5!white,colframe=blue!75!black,fonttitle=\bfseries,title=#1}
+% Tips
+\newtcolorbox{tip}{colframe=white, colback=gray!10!white}
+
+% Mettings
+\newcounter{meetingscounter}
+\setcounter{meetingscounter}{1}
+\newtcolorbox{meeting}[4]{colframe=white, colback=white, colbacktitle=gray!10!white, 
+	coltitle=black, fonttitle=\bfseries,
+	subtitle style={boxrule=0.4pt, colback=white},
+	title={\begin{tabular}{p{2.5cm}p{2.5cm}p{2.5cm}p{2.5cm}l}Meeting \arabic{meetingscounter}  &  \stepcounter{meetingscounter} \faCalendar\ #2 &  \faClockO\ #3 & \faMapMarker\ #4 & \faUsers\ #1\end{tabular}}}
 
 % Thick strike out
 \newcommand{\cancelled}[1]{%
