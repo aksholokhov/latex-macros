@@ -254,7 +254,12 @@
 \newtcolorbox{meeting}[4]{colframe=white, colback=white, colbacktitle=gray!10!white, 
 	coltitle=black, fonttitle=\bfseries,
 	subtitle style={boxrule=0.4pt, colback=white},
-	title={\begin{tabular}{p{2.5cm}p{2.5cm}p{2.5cm}p{2.5cm}l}Meeting \arabic{meetingscounter}  &  \stepcounter{meetingscounter} \faCalendar\ #2 &  \faClockO\ #3 & \faMapMarker\ #4 & \faUsers\ #1\end{tabular}}}
+	title={
+		\begin{tabular}{p{2.5cm}p{2.5cm}p{2.5cm}p{2.5cm}l}
+		\underline{Meeting \arabic{meetingscounter}}  &  \stepcounter{meetingscounter} \faCalendar\ #2 &  \faClockO\ #3 & \faMapMarker\ #4 & \faUsers\ #1
+		\end{tabular}
+		}
+	}
 
 % Thick strike out
 \newcommand{\cancelled}[1]{%
