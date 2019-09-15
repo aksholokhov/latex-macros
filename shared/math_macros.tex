@@ -2,7 +2,7 @@
 \newcommand{\dderiv}[2]{\frac{\mathrm{d}}{\mathrm{d}#2} (#1)}
 
 % partial derivatives
-\newcommand{\pderiv}[2]{\frac{\partial}{\partial #1} (#2)}
+\newcommand{\pderiv}[2]{\frac{\partial #1}{\partial #2}}
 \newcommand*{\pd}[3][]{\ensuremath{\frac{\partial^{#1} #2}{\partial #3}}}
 
 % Integral dx
@@ -75,7 +75,7 @@
 \newcommand\complex{{\raisebox{.043ex}{\rule{0.07em}{1.56ex}} \hskip -.35em {\rm C}}}
 
 % Matrix functions
-\DeclareMathOperator{\trace}{trace}
+\DeclareMathOperator{\trace}{Tr}
 
 % matrix environment for vectors or matrices where elements are centered
 \newenvironment{mat}{\left[\begin{array}{ccccccccccccccc}}{\end{array}\right]}

@@ -73,7 +73,7 @@
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 % \usepackage[space]{grffile} % insert files with spaces
 \usepackage{pdflscape} % Individual horizontal pages
-\usepackage{tcolorbox} % Color boxes for comment
+\usepackage[many]{tcolorbox} % Color boxes for comment
 %\usepackage{xargs} % Expanded arguments features
 %\usepackage{fix-cm} % Computer-Modern at arbitrarysizes
 %\usepackage{eurosym} % Eurosymbol
@@ -252,7 +252,7 @@
 \newcounter{meetingscounter}
 \setcounter{meetingscounter}{1}
 \newtcolorbox{meeting}[4]{colframe=white, colback=white, colbacktitle=gray!10!white, 
-	coltitle=black, fonttitle=\bfseries,
+	coltitle=black, fonttitle=\bfseries, breakable,
 	subtitle style={boxrule=0.4pt, colback=white},
 	title={
 		\begin{tabular}{p{2.5cm}p{2.5cm}p{2.5cm}p{2.5cm}l}
