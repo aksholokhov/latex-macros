@@ -62,6 +62,11 @@
 \newcommand{\tbeta}{\tilde\beta}
 \newcommand{\tgamma}{\tilde\gamma}
 
+%% \hat symbols
+\newcommand{\hbeta}{\hat{\beta}}
+\newcommand{\hgamma}{\hat{\gamma}}
+\newcommand{\hxi}{\hat{\xi}}
+
 % limit arrow "goes to"
 \newcommand{\goto}{\rightarrow}
 
@@ -126,5 +131,9 @@
 \newtheorem{theorem}{Theorem}
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{lemma}[theorem]{Lemma}
+
+% colorful box (for putting around equality signs etc)
+\newtcbox{\mywboxtext}[1]{on line,colback=white,colframe=#1,size=fbox,arc=3pt,boxrule=0.8pt}
+\newcommand{\boxaround}[2]{\mywboxtext{#2}{$#1$}}
 
 
