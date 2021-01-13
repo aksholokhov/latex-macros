@@ -49,7 +49,7 @@
 \usepackage{multirow} % Combined rows in tables
 \usepackage{multicol} % Combined columns in tables
 \usepackage{colortbl} % Color cells
-%\usepackage{longtable} % Tables than span multipages
+\usepackage{longtable} % Tables than span multipages
 
 % % =============== Listings ============
 \usepackage{listings} % Main package for inserting code
@@ -84,7 +84,7 @@
 \newcommand{\search}[1]{\todo[inline, backgroundcolor=blue!30!white]{\textbf{Search:} #1}}
 \newcommand{\edit}[1]{\todo[inline, backgroundcolor=CornflowerBlue!30!white]{\textbf{Edit:} #1}}
 \newcommand{\verify}[1]{\todo[inline, backgroundcolor=Apricot!50!white]{\textbf{Verify:} #1}}
-\newcommand{\experiment}[1]{\todo[inline, backgroundcolor=Green!50!white]{\textbf{Verify:} #1}}
+\newcommand{\experiment}[1]{\todo[inline, backgroundcolor=Green!50!white]{\textbf{Experiment:} #1}}
 \newcounter{ref_todos}
 \setcounter{ref_todos}{1}
 \newcommand{\reference}[1]{\todo[inline, size=\tiny, inlinewidth=0.8cm, noinlinepar, backgroundcolor=Apricot!50!white, caption={\textbf{Reference \arabic{ref_todos}:} #1}]{[\arabic{ref_todos}]\stepcounter{ref_todos} }}
