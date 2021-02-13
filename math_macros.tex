@@ -58,10 +58,14 @@
 \DeclareMathOperator{\XX}{\mathcal{X}}
 \DeclareMathOperator{\LL}{\mathcal{L}}
 \DeclareMathOperator{\OO}{\mathcal{O}}
+\DeclareMathOperator{\II}{\mathcal{I}}
+\DeclareMathOperator{\TT}{\mathcal{T}}
+\DeclareMathOperator{\DD}{\mathcal{D}}
 
 %% \tilde symbols
 \newcommand{\tbeta}{\tilde\beta}
 \newcommand{\tgamma}{\tilde\gamma}
+\newcommand{\tu}{\tilde{u}}
 
 %% \hat symbols
 \newcommand{\hbeta}{\hat{\beta}}
@@ -70,7 +74,8 @@
 
 % limit arrow "goes to"
 \newcommand{\goto}{\rightarrow}
-\newcommand{\gotowith}[1]{\xrightarrow[#1]{}}
+\newcommand{\gotowith}[2]{\xrightarrow[#2]{#1}}
+
 % text above math symbol
 \newcommand{\textabove}[2]{\mathrel{\overset{\makebox[0pt]{\mbox{\normalfont\tiny #1}}}{#2}}}
 
@@ -90,6 +95,9 @@
 
 % Matrix functions
 \DeclareMathOperator{\trace}{Tr}
+
+% Epigraphs
+\DeclareMathOperator{\epi}{epi}
 
 % matrix environment for vectors or matrices where elements are centered
 \newenvironment{mat}{\left[\begin{array}{ccccccccccccccc}}{\end{array}\right]}
@@ -131,6 +139,7 @@
 \newtheorem{definition}{Definition}
 \newtheorem{theorem}{Theorem}
 \newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{assumption}{Assumption}
 \newtheorem{lemma}[theorem]{Lemma}
 
 % colorful box (for putting around equality signs etc)
